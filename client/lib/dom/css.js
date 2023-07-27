@@ -66,30 +66,13 @@ function getCss(node,prop){
 }
 
 
-
+/**
+ * 
+ * @param {HTMLElment} node asdasd 
+ * @param {string} prop  asdasdasd
+ * @param {string}} value 
+ * @returns 
+ */
 export const css = (node,prop,value) => {
   return !value ? getCss(node,prop) : setCss(node,prop,value);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

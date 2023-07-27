@@ -26,19 +26,3 @@ export function bindEvent(node,type,handler){
   // return tiger;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

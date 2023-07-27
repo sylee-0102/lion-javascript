@@ -22,5 +22,3 @@ export function showAlert(node,text = '에러입니다!',timeout = 1000){
 
 
 // showAlert('.alert-error','이름이 없습니다!',2000)
-
-

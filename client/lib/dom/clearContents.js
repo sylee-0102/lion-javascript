@@ -13,16 +13,3 @@ export function clearContents(node){
 
   node.textContent = ''
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

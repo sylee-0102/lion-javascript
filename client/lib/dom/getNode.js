@@ -18,12 +18,3 @@ export function getNodes(node){
 
   return document.querySelectorAll(node);
 }
-
-
-
-
-
-
-
-
-
