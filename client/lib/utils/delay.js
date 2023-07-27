@@ -1,4 +1,4 @@
-ㅍimport { getNode } from "../dom/getNode.js";
+import { getNode } from "../dom/getNode.js";
 import { insertLast } from "../dom/insert.js";
 import { xhrPromise } from "./xhr.js";
 
@@ -41,7 +41,7 @@ const defaultOptions = {
   errorMessage:'알 수 없는 오류가 발생했습니다.'
 }
 
-function delayP(options){
+export function delayP(options){
   
   let config = {...defaultOptions}
 

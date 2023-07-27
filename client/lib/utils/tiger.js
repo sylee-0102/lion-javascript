@@ -1,3 +1,5 @@
+
+
 const URL = 'https://jsonplaceholder.typicode.com/users';
 
 
@@ -11,9 +13,8 @@ const defaultOptions = {
 }
 
 
-const tiger = async (options) => {
+export const tiger = async (options) => {
 
-  
   const {url,...restOptions} = {
     ...defaultOptions,
     ...options,
@@ -22,26 +23,12 @@ const tiger = async (options) => {
       ...options.headers
     }
   }
-
-
   const response = await fetch(url,restOptions);
-
   if(response.ok){
      response.data = await response.json();
   }
-
   return response;
 }
-
-
-// const response = await tiger({
-//   url:URL,
-// });
-// const userData = response.data;
-
-// console.log( userData );
-
-
 
 
 tiger.get = (url,options)=>{
@@ -69,48 +56,10 @@ tiger.delete = (url,options)=>{
 }
 
 tiger.put = (url,body,options)=>{
-  tiger({
+  return tiger({
     method:'PUT',
     url,
     body:JSON.stringify(body),
     ...options
   })
 }
-
-
-
-
-
-
-
-// console.log( userData );
-
-// userData.forEach((item)=>{
-  // console.log( item );
-// })
-
-
-
-
-// const data = await tiger('https://www.naver.com');
-
-
-// console.log( data.data );
-
-
-
-// await tiger('www.naver.com')
-
-
-
-
-
-
-// const response = await fetch('https://jsonplaceholder.typicode.com/user')
-
-// console.log( response );
-
-// if(response.ok){
-//   const data = await response.json();
-//   console.log( data );
-// }
